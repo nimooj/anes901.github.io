@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+<style>
+
+/* HEADER SECTION*/
+header { }
+
+.head {
+	height : 80px;
+	background-color: black;
+}
+
+.head h1 {
+	font-family : "BernhardFashion BT";
+	font-size : 30px;
+	color : white; 
+	text-align: right;
+	padding-top : 23px;
+	margin-right : 8px;
+}
+
+/* CONTENT SECTION */
+.front_page{
+	height : 480px;
+	background-color : white;
+	font-family : "BernhardFashion BT";
+	font-size : 24px;
+	text-align: center;
+}
+.front_page #about_me img.introduction{
+	width : 150px;
+	height : 100px;
+	padding : 75px 30px 20px 30px;
+	text-align: center;
+}
+.front_page #about_me{
+	width : 350px;
+	height : 450px;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 15px;
+	margin-bottom : 15px;
+	float : left;
+	border : 1px solid black;
+}
+.front_page #photo{
+	width : 970px;
+	height : 450px;
+	margin-left : auto;
+	margin-right : auto;
+	margin-top : 15px;
+	margin-bottom : 15px;
+	float : right;
+	border : 1px solid black;
+}
+
+/* FOOTER SECTION */
+footer {height : 90px;}
+.personal_contact {
+	background-color: black;
+	padding-top : 15px;
+	font-family : "BernhardFashion BT";
+	font-size : 20px;
+	color : white;
+	text-align: center;
+}
+.personal_contact #personals .direct p {
+	margin-top : -5px;	
+}
+.personal_contact #personals .site img.web{
+	width : 2%;
+	height : 2%;
+	margin-top : -10px;
+	margin-left : 4px;
+	margin-right : 8px;
+	float : right
+}
+
+</style>
+</head>
+</html>
