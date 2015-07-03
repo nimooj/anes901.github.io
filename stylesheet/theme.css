@@ -48,6 +48,9 @@ header a:-webkit-any-link {
 	color : white;
 	cursor : auto;
 }
+header a:hover {
+	color : yellow;
+}
 
 /* CONTENT SECTION */
 .body{
