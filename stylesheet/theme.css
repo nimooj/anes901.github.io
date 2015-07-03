@@ -141,6 +141,14 @@ footer {
 	color : white;
 	text-align: center;
 }
+/*
+button {
+	background-color: gray;	
+}
+button.activy {
+	background-color: blue; 
+}
+*/
 
 footer .site {
 	position : absolute;
@@ -156,3 +164,19 @@ footer a:-webkit-any-link{
 	text-decoration : none;
 	cursor : auto;
 }
+
+/*class name을 class = "color-main font-main" 이런 식으로 여러개 중복해서 속성을 부여할 수 있음*/
+/*
+.color-main {
+	color: red;
+}
+.color-sub {
+	color: blue;
+}
+.font-main {
+	font-size: 20px;
+}
+.font-sub {
+	font-size: 16px;
+}
+*/
