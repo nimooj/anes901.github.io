@@ -1,5 +1,7 @@
 html, body{
+	min-width : 1000px;
 	width : 100%;
+	min-height : auto;
 	height : 100%;
 	margin : 0;
 }
@@ -10,14 +12,13 @@ header {
 	-webkit-box-sizeing : border-box;
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
-	position : absolute;
+	position : relative;
 	top : 0;
-
 	width : 100%;
-	height : 15%;
+	height : 20%;
 
-background-image : url("../images/pattern_leaf.jpg");
-background-repeat : repeat-x;
+	background-image : url("../images/pattern_leaf.jpg");
+	background-repeat : repeat-x;
 	background-color : black;
 
 	font-family : "BernhardFashion BT";
@@ -30,7 +31,7 @@ background-repeat : repeat-x;
 }
 header #menu {
 	-webkit-box-sizeing : border-box;
-		-mox-box-sizing : border-box;
+	-mox-box-sizing : border-box;
 	box-sizing : border-box;
 
 	position : absolute;
@@ -55,10 +56,9 @@ header a:-webkit-any-link {
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
 	position : relative;
-	top : 15%;
 
 	width : 100%;
-	height : 85%;
+	height : 80%;
 
 	background-color : #FAFAFA;
 	font-family : "BernhardFashion BT";
@@ -73,34 +73,49 @@ header a:-webkit-any-link {
 	left : 0;
 
 	width : 20%;
-	height : 85%;
+	height : 100%;
 
 	color : black;
-	font-size : 24px;
 	text-align : center;
 }
 .body #about_me img.face{
-	width : 150px;
-	height : 100px;
-	padding : 75px 30px 20px 30px;
+	-webkit-box-sizeing : border-box;
+	-mox-box-sizing : border-box;
+	box-sizing : border-box;
+	display : block;
+	position : absolute;
+	top : 5%;
+	left : 9%;
+
+	width : 80%;
+	height : auto;
 	text-align: center;
+}
+.body #about_me p{margin : 0;}
+.body #about_me .info {
+	display : inline-block;
+
+	margin-left : auto;
+	margin-right : auto;
+	position : relative;
+	top : 40%;
+	font-size : 24px;
 }
 .body #photo{
 	-webkit-box-sizeing : border-box;
-		-mox-box-sizing : border-box;
+	-mox-box-sizing : border-box;
 	box-sizing : border-box;
 	position : absolute;
 	right : 0;
 	left : 20%;
 
 	width : 80%;
-	height : 85%;
+	height : 100%;
 
 	background-color : #090909;
 	font-size : 24px;
 	text-align : center;
 }
-
 
 /* FOOTER SECTION */
 footer {
@@ -108,14 +123,15 @@ footer {
 	-webkit-box-sizeing : border-box;
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
-	position : absolute;
-	bottom : 0;
+	position : relative;
+	bottom : 10%;
 
 	background-image : url("../images/tropical.jpg");
 	background-repeat: repeat-x;
 	background-color : black;
+
 	width : 100%;
-	height : 16%;
+	height : 10%;
 
 	font-family : "BernhardFashion BT";
 	font-size : 20px;
@@ -123,7 +139,7 @@ footer {
 	text-align: center;
 }
 
-.site {
+footer .site {
 	position : absolute;
 	height : 30px;
 	margin: 0 0.5% 0.5% 0;
