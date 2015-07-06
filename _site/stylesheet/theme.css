@@ -15,13 +15,16 @@ header {
 	position : relative;
 	top : 0;
 	width : 100%;
+	min-width : 1000px;
 	height : 20%;
 
 	background-image : url("../images/pattern_leaf.jpg");
 	background-repeat : repeat-x;
 	background-color : black;
 
+	/*font-family : "BernhardFashion BT";*/
 	font-family : "BernhardFashion BT";
+	src : "/font/ENBERNF.TTF";
 	font-size : 18px;
 	color : white; 
 	text-align: right;
@@ -29,96 +32,82 @@ header {
 	padding-top : 0.2%;
 	padding-right : 1%;
 }
-header #menu {
+header .menu {
 	-webkit-box-sizeing : border-box;
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
 
+	width : 100%;
+	min-width : 1000px;
+	height : 20px;
+
 	position : absolute;
-	left : 4px;
+
 	bottom : 10px;
 
 	text-align : left;
 	font-size : 15px;
 }
-header a:-webkit-any-link {
+
+header .menu .select {
+	position : absolute;
+}
+
+header .menu .select {
+	position : relative;
+
+}
+
+header .menu a { 
 	display : inline-block;
 	text-decoration : none;
+
 	margin-left : 30px;
 	color : white;
 	cursor : auto;
 }
-header a:hover {
+
+header .menu .select a:hover {
 	color : yellow;
+	text-decoration : underline;
 }
 
-/* CONTENT SECTION */
-.body{
-	/*fix the size of the box*/
-	-webkit-box-sizeing : border-box;
-	-mox-box-sizing : border-box;
-	box-sizing : border-box;
-	position : relative;
-
-	width : 100%;
-	height : 80%;
-
-	background-color : #FAFAFA;
-	font-family : "BernhardFashion BT";
-	color : white;
-}
-
-.body #about_me{
-	-webkit-box-sizeing : border-box;
-	-mox-box-sizing : border-box;
-	box-sizing : border-box;
+header .menu .select .quick {
 	position : absolute;
-	left : 0;
-
-	width : 20%;
-	height : 100%;
-
-	color : black;
-	text-align : center;
+	top : 0;
+	right : 30px;
+	padding : 0;
+	margin : 0;
 }
-.body #about_me img.face{
+
+header .menu .select li {
+	list-style: none;
+	padding : 0;
+	margin : 0;
+}
+
+header .menu .select li:hover ul#menu_bar{
 	-webkit-box-sizeing : border-box;
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
-	display : block;
-	position : absolute;
-	top : 5%;
-	left : 9%;
-
-	width : 80%;
-	height : auto;
-	text-align: center;
-}
-.body #about_me p{margin : 0;}
-.body #about_me .info {
 	display : inline-block;
 
-	margin-left : auto;
-	margin-right : auto;
-	position : relative;
-	top : 40%;
-	font-size : 24px;
-}
-.body #photo{
-	-webkit-box-sizeing : border-box;
-	-mox-box-sizing : border-box;
-	box-sizing : border-box;
+	width : 150px;
+	height : 140px;
+	float : right;
+
 	position : absolute;
-	right : 0;
-	left : 20%;
+	right : 30px;
+	top : 20px;
+	z-index : 1;
+	text-align: right;
+	background-color : #ddd;
+	line-height: 30px;
 
-	width : 80%;
-	height : 100%;
-
-	background-color : #090909;
-	font-size : 24px;
-	text-align : center;
+	padding : 10px 8px ;
+	margin : 0;
 }
+
 
 /* FOOTER SECTION */
 footer {
@@ -137,6 +126,7 @@ footer {
 	height : 10%;
 
 	font-family : "BernhardFashion BT";
+	src : "/font/ENBERNF.TTF";
 	font-size : 20px;
 	color : white;
 	text-align: center;

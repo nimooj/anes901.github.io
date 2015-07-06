@@ -2,11 +2,58 @@
 <html>
 <head>
 	<meta charset = "utf-8">
-	<title>GIRAFFE blog ... about me</title>
-	<link rel = "stylesheet" type "text/css" href = "stylesheet/theme.css">
+	<title>GIRAFFE...about me</title>
+	<link rel = "stylesheet" type =  "text/css" href = "stylesheet/theme.css">
 	<link rel = "stylesheet" type "text/css" href = "stylesheet/about.css">
+	<script src = "script/test.js"></script>
 </head>
 <body>
+	<header>
+		<h1><b>GIRAFFE</b></h1>
+		<section class = "menu">
+			<nav class = "select">
+				<a href = "/index.html">HOME</a>
+				<a href = "/about.html">ABOUT</a>
+				<a href = "/photo.html">PHOTO</a>
+				<a href = "/contact.html">CONTACT</a>
+				<li> <!-- needed for the hover li-->
+					<a class = "quick">QUICK&nbsp; MENU</a>
+					<ul id = "menu_bar">
+						<a href = "/index.html">HOME</a>
+						<a href = "/about.html">ABOUT</a>
+						<a href = "/photo.html">PHOTO</a>
+						<a href = "/contact.html">CONTACT</a>
+					</ul>
+				</li>
+			</nav>
+		</section>
+	</header>
 
+	<div class = "body">
+		<section id = "about_me">
+			<img class = "face" id = "giraffe_front" title = "CLICK ME!" onclick = "changePhoto()" src = "images/giraffe_front.jpg">
+
+			<div class = "info">
+				<p>
+					<big>Hello</big><br><br>
+					since<br>2015.7.2<br>
+					This page is made on 2015.7.6
+				</p>
+			</div>
+		</section>
+	</div>	
+
+	<footer>
+		<div class = "direct">
+				<b>phone</b> 12.34.56.789<br>
+				<b>e-mail</b> call_giraffe@gmail.com
+		</div>
+
+		<div class = "site">
+			<a href = "http://www.facebook.com"> <img class = "web" src = "images/facebook.jpg" border = "0" width = "30px" height = "30px"> </a>
+			<a href = "http://www.instagram.com"> <img class = "web" src = "images/instagram.jpg" border = "0" width = "30px" height = "30px"> </a>
+			<a href = "http://www.twitter.com"> <img class = "web" src = "images/twitter.jpg" border = "0" width = "30px" height = "30px"> </a>
+		</div>
+	</footer>
 </body>
 </html>
