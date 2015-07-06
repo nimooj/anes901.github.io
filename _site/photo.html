@@ -5,32 +5,84 @@
 	<title>GIRAFFE...photo</title>
 	<link rel = "stylesheet" type = "text/css" href = "stylesheet/theme.css">
 	<link rel = "stylesheet" type = "text/css" href = "stylesheet/photo.css">
+	<script src = "http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src = "script/test.js"></script>
 </head>
-<body>
+<body onload = "create_menu(), quick_menu()">
 	<header>
 		<h1><b>GIRAFFE</b></h1>
 		<section class = "menu">
-			<nav class = "select">
-				<a href = "/index.html">HOME</a>
-				<a href = "/about.html">ABOUT</a>
-				<a href = "/photo.html">PHOTO</a>
-				<a href = "/contact.html">CONTACT</a>
-				<li> <!-- needed for the hover li-->
+			<nav id = "select" class = "select">
+				<!--
+				<a onclick = "move_page('/index.html')">HOME</a>
+				<a onclick = "move_page('/about.html')">ABOUT</a>
+				<a onclick = "move_page('/photo.html')">PHOTO</a>
+				<a onclick = "move_page('/contact.html')">CONTACT</a>
+				-->
+				<li id = "quick_menu"> 
+					<!--
 					<a class = "quick">QUICK&nbsp; MENU</a>
-					<ul id = "menu_bar">
-						<a href = "/index.html">HOME</a>
-						<a href = "/about.html">ABOUT</a>
-						<a href = "/photo.html">PHOTO</a>
-						<a href = "/contact.html">CONTACT</a>
+					<ul id = "menu_bar" >
+						<a onclick = "move_page('/index.html')">HOME</a>
+						<a onclick = "move_page('/about.html')">ABOUT</a>
+						<a onclick = "move_page('/photo.html')">PHOTO</a>
+						<a onclick = "move_page('/contact.html')">CONTACT</a>
 					</ul>
+				-->
 				</li>
 			</nav>
 		</section>
 	</header>
-
+	
 	<div class = "body">
 		<section id = "photo">
-			<p>photos</p>
+			<p>
+				photo<br>
+				photo1<br>
+				photo2<br>
+				photo3<br>
+				photo4<br>
+				photo5<br>
+				photo6<br>
+				photo7<br>
+				photo8<br>
+				photo9<br>
+				photo10<br>
+				photo11<br>
+				photo12<br>
+				photo13<br>
+				photo14<br>
+				photo15<br>
+				photo16<br>
+				photo17<br>
+				photo18<br>
+				photo19<br>
+				photo20<br>
+				photo21<br>
+				photo22<br>
+				photo23<br>
+				photo24<br>
+				photo25<br>
+				photo26<br>
+				photo27<br>
+				photo28<br>
+				photo29<br>
+				photo30<br>
+				photo31<br>
+				photo32<br>
+				photo33<br>
+				photo34<br>
+				photo35<br>
+				photo36<br>
+				photo37<br>
+				photo38<br>
+				photo39<br>
+				photo40<br>
+				photo41<br>
+				photo42<br>
+				photo43<br>
+				photo44<br>
+			</p>
 		</section>
 	</div>
 

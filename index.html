@@ -7,30 +7,33 @@
 	<link rel = "stylesheet" type = "text/class" href = "stylesheet/index_body.css">
 	<script src = "script/test.js"></script>
 </head>
-<body>
+<body onload = "create_menu(), quick_menu()">
 	<header>
 		<h1><b>GIRAFFE</b></h1>
 		<section class = "menu">
-			<nav class = "select">
-				<a href = "/index.html">HOME</a>
-				<a href = "/about.html">ABOUT</a>
-				<a href = "/photo.html">PHOTO</a>
-				<a href = "/contact.html">CONTACT</a>
-				<li> <!-- needed for the hover li-->
+			<nav id = "select" class = "select">
+				<!--
+				<a onclick = "move_page('/index.html')">HOME</a>
+				<a onclick = "move_page('/about.html')">ABOUT</a>
+				<a onclick = "move_page('/photo.html')">PHOTO</a>
+				<a onclick = "move_page('/contact.html')">CONTACT</a>
+				-->
+				<li id = "quick_menu"> 
+					<!--
 					<a class = "quick">QUICK&nbsp; MENU</a>
 					<ul id = "menu_bar" >
-						<a href = "/index.html">HOME</a>
-						<a href = "/about.html">ABOUT</a>
-						<a href = "/photo.html">PHOTO</a>
-						<a href = "/contact.html">CONTACT</a>
+						<a onclick = "move_page('/index.html')">HOME</a>
+						<a onclick = "move_page('/about.html')">ABOUT</a>
+						<a onclick = "move_page('/photo.html')">PHOTO</a>
+						<a onclick = "move_page('/contact.html')">CONTACT</a>
 					</ul>
+				-->
 				</li>
 			</nav>
 		</section>
 	</header>
 
 	<div class = "body">
-
 		<!-- "ABOUT ME" : border 1 -->
 		<section id = "about_me">
 			<img class = "face" id = "giraffe_front" title = "CLICK ME!" onclick = "changePhoto()" src = "images/giraffe_front.jpg">
@@ -45,7 +48,7 @@
 
 		<!-- "PHOTO" : border 2 -->
 		<section id = "photo">
-			<p>photos</p>
+			<p>photo</p>
 		</section>
 	</div>
 

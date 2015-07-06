@@ -64,7 +64,7 @@ header .menu a {
 
 	margin-left : 30px;
 	color : white;
-	cursor : auto;
+	cursor : default;
 }
 
 header .menu .select a:hover {
@@ -79,11 +79,14 @@ header .menu .select .quick {
 	padding : 0;
 	margin : 0;
 }
-
 header .menu .select li {
 	list-style: none;
 	padding : 0;
 	margin : 0;
+}
+
+header .menu .select ul#menu_bar {
+	display : none;
 }
 
 header .menu .select li:hover ul#menu_bar{
@@ -97,7 +100,7 @@ header .menu .select li:hover ul#menu_bar{
 	float : right;
 
 	position : absolute;
-	right : 30px;
+	right : 0;
 	top : 20px;
 	z-index : 1;
 	text-align: right;
@@ -108,6 +111,22 @@ header .menu .select li:hover ul#menu_bar{
 	margin : 0;
 }
 
+/* CONTENT SECTION */
+.body{
+	/*fix the size of the box*/
+	-webkit-box-sizeing : border-box;
+	-mox-box-sizing : border-box;
+	box-sizing : border-box;
+	position : relative;
+
+	width : 100%;
+	height : 70%;
+
+	background-color : #090909;
+	font-family : "BernhardFashion BT";
+	src : "/font/ENBERNF.TTF";
+	color : white;
+}
 
 /* FOOTER SECTION */
 footer {
@@ -116,7 +135,7 @@ footer {
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
 	position : relative;
-	bottom : 10%;
+	bottom : 0;
 
 	background-image : url("../images/tropical.jpg");
 	background-repeat: repeat-x;

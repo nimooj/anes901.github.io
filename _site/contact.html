@@ -5,37 +5,42 @@
 	<title>GIRAFFE...photo</title>
 	<link rel = "stylesheet" type = "text/css" href = "stylesheet/theme.css">
 	<link rel = "stylesheet" type = "text/css" href = "stylesheet/contact.css">
+	<script src = "script/test.js"></script>
 </head>
-<body>
+<body onload = "create_menu(), quick_menu()">
 	<header>
 		<h1><b>GIRAFFE</b></h1>
 		<section class = "menu">
-			<nav class = "select">
-				<a href = "/index.html">HOME</a>
-				<a href = "/about.html">ABOUT</a>
-				<a href = "/photo.html">PHOTO</a>
-				<a href = "/contact.html">CONTACT</a>
-				<li> <!-- needed for the hover li-->
+			<nav id = "select" class = "select">
+				<!--
+				<a onclick = "move_page('/index.html')">HOME</a>
+				<a onclick = "move_page('/about.html')">ABOUT</a>
+				<a onclick = "move_page('/photo.html')">PHOTO</a>
+				<a onclick = "move_page('/contact.html')">CONTACT</a>
+				-->
+				<li id = "quick_menu"> 
+					<!--
 					<a class = "quick">QUICK&nbsp; MENU</a>
-					<ul id = "menu_bar">
-						<a href = "/index.html">HOME</a>
-						<a href = "/about.html">ABOUT</a>
-						<a href = "/photo.html">PHOTO</a>
-						<a href = "/contact.html">CONTACT</a>
+					<ul id = "menu_bar" >
+						<a onclick = "move_page('/index.html')">HOME</a>
+						<a onclick = "move_page('/about.html')">ABOUT</a>
+						<a onclick = "move_page('/photo.html')">PHOTO</a>
+						<a onclick = "move_page('/contact.html')">CONTACT</a>
 					</ul>
+				-->
 				</li>
 			</nav>
 		</section>
 	</header>
 
-	<div class = "body">
+		<div class = "body">
 		<div id = "direct">
 			<p>
 				<b>PHONE</b><br>
 				12.34.56.789<br><br>
 				<b>E-MAIL</b><br>
 				call_giraffe@gmail.com<br><br><br>
-				Please don't hesitate to e-mail me if I don't pick up the phone!
+				<marquee>Please don't hesitate to e-mail me if I don't pick up the phone!</marquee>
 			</p>
 		</div>
 	</div>
