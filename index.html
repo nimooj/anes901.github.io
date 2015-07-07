@@ -7,7 +7,7 @@
 	<link rel = "stylesheet" type = "text/class" href = "stylesheet/index_body.css">
 	<script src = "script/test.js"></script>
 </head>
-<body onload = "create_menu(), quick_menu()">
+<body onload = "create_menu(), quick_menu(), create_link()">
 	<header>
 		<h1><b>GIRAFFE</b></h1>
 		<section class = "menu">
@@ -37,17 +37,12 @@
 	</div>
 
 	<footer>
-		<div class = "direct">
+		<div id = "direct" class = "direct">
 			<b>phone</b> 12.34.56.789<br>
 			<b>e-mail</b> call_giraffe@gmail.com
 		</div>
 
-		<div class = "site">
-			<a href = "http://www.facebook.com"> <img class = "web" src = "images/facebook.jpg" border = "0" width = "30px" height = "30px"> </a>
-			<a href = "http://www.instagram.com"> <img class = "web" src = "images/instagram.jpg" border = "0" width = "30px" height = "30px"> </a>
-			<a href = "http://www.twitter.com"> <img class = "web" src = "images/twitter.jpg" border = "0" width = "30px" height = "30px"> </a>
-		</div>
+		<div id = "site" class = "site"></div>
 	</footer>
-	
 </body>
 </html>
