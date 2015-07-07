@@ -1,28 +1,27 @@
 html, body{
-	min-width : 1000px;
+	min-width : 1200px;
 	width : 100%;
-	min-height : auto;
+	min-height : 96px;
 	height : 100%;
 	margin : 0;
 }
 
 /*HEADER SECTION*/
 header {
-	/*fix the size of the box*/
 	-webkit-box-sizeing : border-box;
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
 	position : relative;
 	top : 0;
 	width : 100%;
-	min-width : 1000px;
+	min-width : 1200px;
 	height : 20%;
+	min-height : 96px;
 
 	background-image : url("../images/pattern_leaf.jpg");
 	background-repeat : repeat-x;
 	background-color : black;
 
-	/*font-family : "BernhardFashion BT";*/
 	font-family : "BernhardFashion BT";
 	src : "/font/ENBERNF.TTF";
 	font-size : 18px;
@@ -38,7 +37,7 @@ header .menu {
 	box-sizing : border-box;
 
 	width : 100%;
-	min-width : 1000px;
+	min-width : 1200px;
 	height : 20px;
 
 	position : absolute;
@@ -96,7 +95,7 @@ header .menu .select li:hover ul#menu_bar{
 	display : inline-block;
 
 	width : 150px;
-	height : 140px;
+	height : 130px;
 	float : right;
 
 	position : absolute;
@@ -107,20 +106,21 @@ header .menu .select li:hover ul#menu_bar{
 	background-color : #ddd;
 	line-height: 30px;
 
-	padding : 10px 8px ;
+	padding : 5px 8px ;
 	margin : 0;
 }
 
 /* CONTENT SECTION */
 .body{
-	/*fix the size of the box*/
 	-webkit-box-sizeing : border-box;
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
 	position : relative;
 
 	width : 100%;
+	min-width : 1200px;
 	height : 70%;
+	min-height : 340px;
 
 	background-color : #090909;
 	font-family : "BernhardFashion BT";
@@ -130,7 +130,6 @@ header .menu .select li:hover ul#menu_bar{
 
 /* FOOTER SECTION */
 footer {
-	/*fix the size of the box*/
 	-webkit-box-sizeing : border-box;
 	-mox-box-sizing : border-box;
 	box-sizing : border-box;
@@ -142,7 +141,9 @@ footer {
 	background-color : black;
 
 	width : 100%;
+	min-width : 1200px;
 	height : 10%;
+	min-height : 47px;
 
 	font-family : "BernhardFashion BT";
 	src : "/font/ENBERNF.TTF";
@@ -150,14 +151,6 @@ footer {
 	color : white;
 	text-align: center;
 }
-/*
-button {
-	background-color: gray;	
-}
-button.activy {
-	background-color: blue; 
-}
-*/
 
 footer .site {
 	position : absolute;
@@ -173,19 +166,3 @@ footer a:-webkit-any-link{
 	text-decoration : none;
 	cursor : auto;
 }
-
-/*class name을 class = "color-main font-main" 이런 식으로 여러개 중복해서 속성을 부여할 수 있음*/
-/*
-.color-main {
-	color: red;
-}
-.color-sub {
-	color: blue;
-}
-.font-main {
-	font-size: 20px;
-}
-.font-sub {
-	font-size: 16px;
-}
-*/

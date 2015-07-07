@@ -1,18 +1,4 @@
 .body {
-	/*fix the size of the box*/
-	-webkit-box-sizeing : border-box;
-	-mox-box-sizing : border-box;
-	box-sizing : border-box;
-	position : relative;
-
-	width : 100%;
-	height : 70%;
-
-	background-color : #090909;
-	font-family : "BernhardFashion BT";
-	src : "/font/ENBERNF.TTF";
-	color : yellow;
-
 	/* add scroll if context is over height*/
 	overflow: auto;
 }
